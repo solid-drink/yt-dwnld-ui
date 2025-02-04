@@ -1,0 +1,31 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YT-DLP GUI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>YT-DLP GUI</h1>
+    <input id="video-url" type="text" placeholder="Masukkan URL Video" />
+    <button id="check-link">Check Link</button>
+    <div id="video-info" style="display: none">
+      <h2 id="video-title"></h2>
+      <img
+        id="video-thumbnail"
+        src=""
+        alt="Thumbnail"
+        style="max-width: 100%; height: auto"
+      />
+    </div>
+    <button id="download-video" style="display: none">Download Video</button>
+    <pre
+      id="command-output"
+      style="border: 1px solid #ccc; padding: 10px; overflow: auto"
+    ></pre>
+    <script src="renderer.js"></script>
+  </body>
+</html>
